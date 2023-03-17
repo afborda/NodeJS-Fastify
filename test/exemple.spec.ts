@@ -2,7 +2,7 @@ import { test, expect } from 'vitest'
 import request from 'supertest'
 import { app } from '../src/app'
 
-test('It should create new transaction', async () => {
+test('new transaction', async () => {
   await request(app.server)
     .post('/transactions')
     .send({
